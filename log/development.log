@@ -1,0 +1,756 @@
+Started GET "/" for 61.68.35.10 at 2019-06-08 00:52:14 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (4.0ms)
+Completed 200 OK in 18ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 34.220.48.216 at 2019-06-08 00:53:11 +0000
+Cannot render console from 34.220.48.216! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as */*
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 27ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (24.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (25.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateIdeas (20190608005859)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ideas" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "discription" text, "picture" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190608005859_create_ideas.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190608005859"]]
+  ↳ bin/rails:9
+  [1m[35m (22.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-06-08 00:59:46.751750"], ["updated_at", "2019-06-08 00:59:46.751750"]]
+  ↳ bin/rails:9
+  [1m[35m (17.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 61.68.35.10 at 2019-06-08 01:02:26 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/rvm/gems/ruby-2.4.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (4.6ms)
+Completed 200 OK in 19ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 61.68.35.10 at 2019-06-08 01:02:50 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas" for 61.68.35.10 at 2019-06-08 01:02:59 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:16
+  Rendered ideas/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 791ms (Views: 774.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/ideas/new" for 61.68.35.10 at 2019-06-08 01:11:11 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#new as HTML
+  Rendering ideas/new.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (105.6ms)
+  Rendered ideas/new.html.erb within layouts/application (110.3ms)
+Completed 200 OK in 205ms (Views: 187.0ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/ideas" for 61.68.35.10 at 2019-06-08 01:11:23 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nzaaPZBIdhtajtijtKOtVwcZj6hssPA+4pPWeNiHj9azAuwf1c++LkXMpXpYWkXOg/1OvzHbbueEHnR2pWqS+g==", "idea"=>{"name"=>"Coco", "discription"=>"Gets Smackos", "picture"=>""}, "commit"=>"Create Idea"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/ideas_controller.rb:30
+  [1m[36mIdea Create (1.0ms)[0m  [1m[32mINSERT INTO "ideas" ("name", "discription", "picture", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Coco"], ["discription", "Gets Smackos"], ["picture", ""], ["created_at", "2019-06-08 01:11:23.595334"], ["updated_at", "2019-06-08 01:11:23.595334"]]
+  ↳ app/controllers/ideas_controller.rb:30
+  [1m[35m (13.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/ideas_controller.rb:30
+Redirected to https://railsgirls-nos4ay2.c9users.io/ideas/1
+Completed 302 Found in 25ms (ActiveRecord: 14.3ms)
+
+
+Started GET "/ideas/1" for 61.68.35.10 at 2019-06-08 01:11:23 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ideas_controller.rb:67
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 24.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ideas" for 61.68.35.10 at 2019-06-08 01:11:30 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:16
+  Rendered ideas/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 32ms (Views: 29.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ideas/new" for 61.68.35.10 at 2019-06-08 01:11:32 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#new as HTML
+  Rendering ideas/new.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (3.5ms)
+  Rendered ideas/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 26ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ideas" for 61.68.35.10 at 2019-06-08 01:11:49 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Tdzq5On6qHMyJAN40fFBfmUopybWExf89YL2KkZ3Lldh6JzGrH1gRi1mfqE9CKnn4cxmMYt4iSWTD1QkO5ozew==", "idea"=>{"name"=>"Remy", "discription"=>"Gets the Tiki Torch", "picture"=>""}, "commit"=>"Create Idea"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/ideas_controller.rb:30
+  [1m[36mIdea Create (0.5ms)[0m  [1m[32mINSERT INTO "ideas" ("name", "discription", "picture", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Remy"], ["discription", "Gets the Tiki Torch"], ["picture", ""], ["created_at", "2019-06-08 01:11:49.685475"], ["updated_at", "2019-06-08 01:11:49.685475"]]
+  ↳ app/controllers/ideas_controller.rb:30
+  [1m[35m (12.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/ideas_controller.rb:30
+Redirected to https://railsgirls-nos4ay2.c9users.io/ideas/2
+Completed 302 Found in 75ms (ActiveRecord: 13.5ms)
+
+
+Started GET "/ideas/2" for 61.68.35.10 at 2019-06-08 01:11:49 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ideas_controller.rb:67
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 61.68.35.10 at 2019-06-08 01:11:53 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:16
+  Rendered ideas/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas/new" for 61.68.35.10 at 2019-06-08 01:11:54 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#new as HTML
+  Rendering ideas/new.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (2.6ms)
+  Rendered ideas/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ideas" for 61.68.35.10 at 2019-06-08 01:12:11 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EbnLcUIvHQ3yGwh5qZEZExM8ZTfju79jtWI7fIPmsf89jb1TB6jVOO1ZdaBFaPGKl9ikIL7QIbrT75ly/gus0w==", "idea"=>{"name"=>"Annie", "discription"=>"Gets the Curtain Rod", "picture"=>""}, "commit"=>"Create Idea"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/ideas_controller.rb:30
+  [1m[36mIdea Create (1.2ms)[0m  [1m[32mINSERT INTO "ideas" ("name", "discription", "picture", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Annie"], ["discription", "Gets the Curtain Rod"], ["picture", ""], ["created_at", "2019-06-08 01:12:11.811829"], ["updated_at", "2019-06-08 01:12:11.811829"]]
+  ↳ app/controllers/ideas_controller.rb:30
+  [1m[35m (14.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/ideas_controller.rb:30
+Redirected to https://railsgirls-nos4ay2.c9users.io/ideas/3
+Completed 302 Found in 22ms (ActiveRecord: 16.1ms)
+
+
+Started GET "/ideas/3" for 61.68.35.10 at 2019-06-08 01:12:12 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/ideas_controller.rb:67
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 23ms (Views: 20.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 61.68.35.10 at 2019-06-08 01:12:14 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:16
+  Rendered ideas/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas/new" for 61.68.35.10 at 2019-06-08 01:22:47 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#new as HTML
+  Rendering ideas/new.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (3.2ms)
+  Rendered ideas/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ideas" for 61.68.35.10 at 2019-06-08 01:22:59 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+WUILY3ct8k6+2RBX2Y0/V/zTponNyevnYIf+2J3y9XVUX4PyFt//CW5GZizn9xk2xePjXpcuXb7D731H5rW+Q==", "idea"=>{"name"=>"Blackberry", "discription"=>"Gets Blueberries", "picture"=>""}, "commit"=>"Create Idea"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/ideas_controller.rb:30
+  [1m[36mIdea Create (0.8ms)[0m  [1m[32mINSERT INTO "ideas" ("name", "discription", "picture", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Blackberry"], ["discription", "Gets Blueberries"], ["picture", ""], ["created_at", "2019-06-08 01:22:59.401076"], ["updated_at", "2019-06-08 01:22:59.401076"]]
+  ↳ app/controllers/ideas_controller.rb:30
+  [1m[35m (16.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/ideas_controller.rb:30
+Redirected to https://railsgirls-nos4ay2.c9users.io/ideas/4
+Completed 302 Found in 23ms (ActiveRecord: 17.4ms)
+
+
+Started GET "/ideas/4" for 61.68.35.10 at 2019-06-08 01:22:59 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/ideas_controller.rb:67
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 26ms (Views: 22.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ideas" for 61.68.35.10 at 2019-06-08 01:23:02 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:16
+  Rendered ideas/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 29ms (Views: 26.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ideas/new" for 61.68.35.10 at 2019-06-08 01:23:04 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#new as HTML
+  Rendering ideas/new.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (4.1ms)
+  Rendered ideas/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 42ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ideas" for 61.68.35.10 at 2019-06-08 01:23:17 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ymr9W9Mo4PsQYoguG4H2ELXVKVjztmFvdq+Xpx3V2cBOXot5lq8ozg8g9ff3eB6JMTHoT67d/7YQIjWpYDjE7A==", "idea"=>{"name"=>"Buddy", "discription"=>"Gets Drugs", "picture"=>""}, "commit"=>"Create Idea"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/ideas_controller.rb:30
+  [1m[36mIdea Create (0.7ms)[0m  [1m[32mINSERT INTO "ideas" ("name", "discription", "picture", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Buddy"], ["discription", "Gets Drugs"], ["picture", ""], ["created_at", "2019-06-08 01:23:17.555383"], ["updated_at", "2019-06-08 01:23:17.555383"]]
+  ↳ app/controllers/ideas_controller.rb:30
+  [1m[35m (13.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/ideas_controller.rb:30
+Redirected to https://railsgirls-nos4ay2.c9users.io/ideas/5
+Completed 302 Found in 20ms (ActiveRecord: 13.9ms)
+
+
+Started GET "/ideas/5" for 61.68.35.10 at 2019-06-08 01:23:17 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/ideas_controller.rb:67
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 61.68.35.10 at 2019-06-08 01:23:19 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:16
+  Rendered ideas/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ideas/new" for 61.68.35.10 at 2019-06-08 01:23:21 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#new as HTML
+  Rendering ideas/new.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (2.6ms)
+  Rendered ideas/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ideas" for 61.68.35.10 at 2019-06-08 01:23:33 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EoFYJi+SdKdv8H1aX8i0huirc9VV71pI+TqjisdYndM+tS4EahW8knCyAIOzMVwfbE+ywgiExJGftwGEurWA/w==", "idea"=>{"name"=>"Bob", "discription"=>"Gets whatever he wants", "picture"=>""}, "commit"=>"Create Idea"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/ideas_controller.rb:30
+  [1m[36mIdea Create (0.7ms)[0m  [1m[32mINSERT INTO "ideas" ("name", "discription", "picture", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Bob"], ["discription", "Gets whatever he wants"], ["picture", ""], ["created_at", "2019-06-08 01:23:33.356741"], ["updated_at", "2019-06-08 01:23:33.356741"]]
+  ↳ app/controllers/ideas_controller.rb:30
+  [1m[35m (24.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/ideas_controller.rb:30
+Redirected to https://railsgirls-nos4ay2.c9users.io/ideas/6
+Completed 302 Found in 35ms (ActiveRecord: 25.5ms)
+
+
+Started GET "/ideas/6" for 61.68.35.10 at 2019-06-08 01:23:33 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mIdea Load (0.6ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/ideas_controller.rb:67
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 29ms (Views: 24.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/ideas" for 61.68.35.10 at 2019-06-08 01:23:35 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:16
+  Rendered ideas/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 31ms (Views: 28.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ideas/6/edit" for 61.68.35.10 at 2019-06-08 01:23:39 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/ideas_controller.rb:67
+  Rendering ideas/edit.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (3.3ms)
+  Rendered ideas/edit.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 29ms (Views: 25.4ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/ideas/6" for 61.68.35.10 at 2019-06-08 01:23:53 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TmKgkWhYMsT4EZLqLK9dGUa38Sekso3FdarnhPZUoU1Drg6ot55aXYif3HrinXbIveGymafC/wP42Jvtsb+qFA==", "idea"=>{"name"=>"Bob", "discription"=>"Gets Whatever He Wants", "picture"=>""}, "commit"=>"Update Idea", "id"=>"6"}
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/ideas_controller.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/ideas_controller.rb:44
+  [1m[36mIdea Update (0.4ms)[0m  [1m[33mUPDATE "ideas" SET "discription" = ?, "updated_at" = ? WHERE "ideas"."id" = ?[0m  [["discription", "Gets Whatever He Wants"], ["updated_at", "2019-06-08 01:23:53.405955"], ["id", 6]]
+  ↳ app/controllers/ideas_controller.rb:44
+  [1m[35m (16.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/ideas_controller.rb:44
+Redirected to https://railsgirls-nos4ay2.c9users.io/ideas/6
+Completed 302 Found in 155ms (ActiveRecord: 17.0ms)
+
+
+Started GET "/ideas/6" for 61.68.35.10 at 2019-06-08 01:23:53 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/ideas_controller.rb:67
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 26ms (Views: 23.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 61.68.35.10 at 2019-06-08 01:23:55 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:16
+  Rendered ideas/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas/new" for 61.68.35.10 at 2019-06-08 01:23:58 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#new as HTML
+  Rendering ideas/new.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (4.0ms)
+  Rendered ideas/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 37ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ideas" for 61.68.35.10 at 2019-06-08 01:24:11 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ffMdemwmiPkLcjXRiJphS0O2vOxF/9ld4KMZy9Lc0NhRx2tYKaFAzBQwSAhkY4nSx1J9+xiUR4SGLrvFrzHN9A==", "idea"=>{"name"=>"Boo", "discription"=>"Is A Bitch", "picture"=>""}, "commit"=>"Create Idea"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/ideas_controller.rb:30
+  [1m[36mIdea Create (0.7ms)[0m  [1m[32mINSERT INTO "ideas" ("name", "discription", "picture", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Boo"], ["discription", "Is A Bitch"], ["picture", ""], ["created_at", "2019-06-08 01:24:11.231974"], ["updated_at", "2019-06-08 01:24:11.231974"]]
+  ↳ app/controllers/ideas_controller.rb:30
+  [1m[35m (12.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/ideas_controller.rb:30
+Redirected to https://railsgirls-nos4ay2.c9users.io/ideas/7
+Completed 302 Found in 129ms (ActiveRecord: 13.3ms)
+
+
+Started GET "/ideas/7" for 61.68.35.10 at 2019-06-08 01:24:11 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/ideas_controller.rb:67
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 24ms (Views: 21.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ideas" for 61.68.35.10 at 2019-06-08 01:24:14 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:16
+  Rendered ideas/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 48ms (Views: 45.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ideas" for 61.68.35.10 at 2019-06-08 01:47:50 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:16
+  Rendered ideas/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 29ms (Views: 26.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ideas" for 61.68.35.10 at 2019-06-08 01:48:22 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:16
+  Rendered ideas/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ideas" for 61.68.35.10 at 2019-06-08 01:48:41 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:16
+  Rendered ideas/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 37ms (Views: 33.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ideas" for 61.68.35.10 at 2019-06-08 01:49:15 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:16
+  Rendered ideas/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 29ms (Views: 26.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ideas" for 61.68.35.10 at 2019-06-08 01:50:14 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:16
+  Rendered ideas/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 61.68.35.10 at 2019-06-08 01:52:35 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:16
+  Rendered ideas/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 31ms (Views: 28.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ideas" for 34.228.240.168 at 2019-06-08 01:53:06 +0000
+Cannot render console from 34.228.240.168! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as */*
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:16
+  Rendered ideas/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 59ms (Views: 36.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ideas" for 61.68.35.10 at 2019-06-08 01:53:54 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:16
+  Rendered ideas/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 30ms (Views: 26.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ideas" for 61.68.35.10 at 2019-06-08 01:59:00 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:16
+  Rendered ideas/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ideas" for 61.68.35.10 at 2019-06-08 02:07:01 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/rvm/gems/ruby-2.4.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:16
+  Rendered ideas/index.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 429ms (Views: 413.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/ideas" for 61.68.35.10 at 2019-06-08 02:11:22 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:16
+  Rendered ideas/index.html.erb within layouts/application (153.1ms)
+Completed 200 OK in 181ms (Views: 172.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/ideas" for 61.68.35.10 at 2019-06-08 02:12:12 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:16
+  Rendered ideas/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 30ms (Views: 27.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ideas/new" for 61.68.35.10 at 2019-06-08 02:12:55 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#new as HTML
+  Rendering ideas/new.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (23.2ms)
+  Rendered ideas/new.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 52ms (Views: 49.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas/new" for 61.68.35.10 at 2019-06-08 02:13:36 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#new as HTML
+  Rendering ideas/new.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (14.8ms)
+  Rendered ideas/new.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 45ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ideas" for 61.68.35.10 at 2019-06-08 02:14:57 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Dm2Zq0b8cYUdgTx/dzdj/KHGmAQCxi+uYBvJzqq4+/efrjNJtD8NM224Gz3Dkr6e6x8ABR1Gw2G99w5nNTIPoQ==", "idea"=>{"name"=>"Guinea Pig", "discription"=>"Wheek", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007f28cd7170f8 @tempfile=#<Tempfile:/tmp/RackMultipart20190608-27331-mxpzf8.jpg>, @original_filename="download.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"idea[picture]\"; filename=\"download.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Idea"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/ideas_controller.rb:30
+  [1m[36mIdea Create (1.7ms)[0m  [1m[32mINSERT INTO "ideas" ("name", "discription", "picture", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Guinea Pig"], ["discription", "Wheek"], ["picture", "download.jpg"], ["created_at", "2019-06-08 02:14:57.273979"], ["updated_at", "2019-06-08 02:14:57.273979"]]
+  ↳ app/controllers/ideas_controller.rb:30
+  [1m[35m (18.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/ideas_controller.rb:30
+Redirected to https://railsgirls-nos4ay2.c9users.io/ideas/8
+Completed 302 Found in 114ms (ActiveRecord: 20.4ms)
+
+
+Started GET "/ideas/8" for 61.68.35.10 at 2019-06-08 02:14:57 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/ideas_controller.rb:67
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 25ms (Views: 20.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ideas/8" for 61.68.35.10 at 2019-06-08 02:16:37 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/ideas_controller.rb:67
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 25ms (Views: 22.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 61.68.35.10 at 2019-06-08 02:16:42 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:16
+  Rendered ideas/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 61.68.35.10 at 2019-06-08 02:18:16 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:16
+  Rendered ideas/index.html.erb within layouts/application (6.0ms)
+Started GET "/ideas/8" for 61.68.35.10 at 2019-06-08 02:18:16 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/ideas_controller.rb:67
+Completed 200 OK in 92ms (Views: 89.3ms | ActiveRecord: 0.3ms)
+
+
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 41ms (Views: 33.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ideas/8" for 61.68.35.10 at 2019-06-08 02:18:40 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/ideas_controller.rb:67
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 27ms (Views: 23.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ideas" for 61.68.35.10 at 2019-06-08 02:18:59 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:16
+  Rendered ideas/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 55ms (Views: 52.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ideas" for 61.68.35.10 at 2019-06-08 02:27:38 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:16
+  Rendered ideas/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 41ms (Views: 33.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 61.68.35.10 at 2019-06-08 02:27:51 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/ideas" for 61.68.35.10 at 2019-06-08 02:27:51 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:16
+  Rendered ideas/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ideas" for 61.68.35.10 at 2019-06-08 02:30:16 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:16
+  Rendered ideas/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 75ms (Views: 68.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/info" for 61.68.35.10 at 2019-06-08 02:30:33 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/info"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/pages/info" for 61.68.35.10 at 2019-06-08 02:30:56 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#info as HTML
+  Rendering pages/info.html.erb within layouts/application
+  Rendered pages/info.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 27ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/info" for 61.68.35.10 at 2019-06-08 02:32:21 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#info as HTML
+  Rendering pages/info.html.erb within layouts/application
+  Rendered pages/info.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/info" for 61.68.35.10 at 2019-06-08 02:32:53 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#info as HTML
+  Rendering pages/info.html.erb within layouts/application
+  Rendered pages/info.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 35.155.227.129 at 2019-06-08 02:36:09 +0000
+Cannot render console from 35.155.227.129! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/ideas" for 35.155.227.129 at 2019-06-08 02:36:09 +0000
+Cannot render console from 35.155.227.129! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as */*
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.6ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:16
+  Rendered ideas/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 60ms (Views: 48.5ms | ActiveRecord: 0.6ms)
+
+
